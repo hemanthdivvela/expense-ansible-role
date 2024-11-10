@@ -15,8 +15,9 @@
 - name: create expense user
   ansible.builtin.user:
     name: expense
+    
 
-- name: run app pre-requisites
+- name: run app pre-requisite
   ansible.builtin.import_role:
     name: common
     task_form: app-pre-req
