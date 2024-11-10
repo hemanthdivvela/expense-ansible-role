@@ -17,10 +17,11 @@
     name: expense
 
 
-- name: run app pre-requisit
+- name: run app pre-requisites
   ansible.builtin.import_role:
+    ansible.builtin.import_role:
     name: common
-    task_form: app-pre-req
+    tasks_from: app-pre-req
 
 - name: install npm dependencies
   ansible.builtin.command: npm install
